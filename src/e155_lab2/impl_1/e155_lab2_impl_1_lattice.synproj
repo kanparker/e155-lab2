@@ -39,15 +39,16 @@
 -use_io_insertion 1
 
 -resolve_mixed_drivers 0
--path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1" "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2"
+-path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/impl_1" "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2"
 -ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/top.sv"
-"C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv"
-"C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/clock_divider.sv"
+-sver "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv"
+"C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv"
+"C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv"
 
 
--path "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2"
+-path "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2"
+-top top
 -udb "e155_lab2_impl_1_rtl.udb"
 -output_hdl "e155_lab2_impl_1.vm"
 

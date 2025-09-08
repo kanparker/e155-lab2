@@ -1,282 +1,4 @@
 
-"C:/lscc/radiant/2024.2/tcltk/windows/bin/tclsh" "e155_lab2_impl_1_synthesize.tcl"
-
-synthesis -f C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1/e155_lab2_impl_1_lattice.synproj -logfile e155_lab2_impl_1_lattice.srp
-synthesis:  version Radiant Software (64-bit) 2024.2.0.3.0
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Sep  7 14:45:55 2025
-
-
-Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1/e155_lab2_impl_1_lattice.synproj -logfile e155_lab2_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/promote.xml 
-
-INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
-
-The -top option is not used.
-Synthesis options:
-The -a option is iCE40UP.
-The -t option is SG48.
-The -sp option is High-Performance_1.2V.
-The -p option is iCE40UP5K.
-
-###################### Device Information ######################
-----------------------------------------------------------------
-Lattice Family        | iCE40UP
-----------------------------------------------------------------
-Device                | iCE40UP5K
-----------------------------------------------------------------
-Package               | SG48
-----------------------------------------------------------------
-Performance Grade     | High-Performance_1.2V
-----------------------------------------------------------------
-################################################################
-
-####################### Device Resources #######################
-----------------------------------------------------------------
-Logic Cells           | 5280
-----------------------------------------------------------------
-RAM Blocks            | 30
-----------------------------------------------------------------
-DSP Blocks            | 8
-----------------------------------------------------------------
-PLLs                  | 1
-----------------------------------------------------------------
-I/O Pins              | 56
-----------------------------------------------------------------
-################################################################
-
-Resolving user-selected strategy settings...
-
-
-###################### Strategy Settings #######################
-----------------------------------------------------------------
-Optimization Goal     | Area
-----------------------------------------------------------------
-Top-level Module Name | 
-----------------------------------------------------------------
-Target Frequency      | 200.000 MHz
-----------------------------------------------------------------
-Maximum Fanout        | 1000
-----------------------------------------------------------------
-Timing Path Count     | 3
-----------------------------------------------------------------
-RAM Read/Write Check  | False
-----------------------------------------------------------------
-BRAM Utilization      | 100.0%
-----------------------------------------------------------------
-DSP Usage             | True
-----------------------------------------------------------------
-DSP Utilization       | 100.0%
-----------------------------------------------------------------
-FSM Encoding Style    | Auto
-----------------------------------------------------------------
-Resolve Mixed Drivers | False
-----------------------------------------------------------------
-Fix Gated Clocks      | True
-----------------------------------------------------------------
-Mux Style             | Auto
-----------------------------------------------------------------
-Use Carry Chain       | True
-----------------------------------------------------------------
-Carry Chain Length    | Infinite
-----------------------------------------------------------------
-Loop Limit            | 1950
-----------------------------------------------------------------
-Use I/O Insertion     | True
-----------------------------------------------------------------
-Use I/O Registers     | True
-----------------------------------------------------------------
-Resource Sharing      | True
-----------------------------------------------------------------
-Propagate Constants   | True
-----------------------------------------------------------------
-Remove Duplicate Reg  | True
-----------------------------------------------------------------
-Force GSR             | False
-----------------------------------------------------------------
-ROM Style             | Auto
-----------------------------------------------------------------
-RAM Style             | Auto
-----------------------------------------------------------------
-Remove LOC Properties | False
-----------------------------------------------------------------
-Partition Flow        | False
-----------------------------------------------------------------
-################################################################
-
-
-The -comp option is FALSE.
-The -syn option is FALSE.
-
-Output HDL filename: e155_lab2_impl_1.vm
--path C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2 (searchpath added)
--path C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1 (searchpath added)
--path C:/lscc/radiant/2024.2/ispfpga/ice40tp/data (searchpath added)
-Mixed language design
-CRITICAL <35001476> - A top-level module has not been specified for the mixed language design.
-Verilog design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v
-Verilog design file: C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/top.sv
-Verilog design file: C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
-Verilog design file: C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/source/impl_1/clock_divider.sv
-VHDL library: pmi
-VHDL design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd
-WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
-WARNING <35935050> - input port I is not connected on this instance. VDB-5050
-
-Compiling design...
-
-Analyzing Verilog file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/top.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/clock_divider.sv. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
-
-INFO <35921014> - c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-WARNING <35001200> - Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
-INFO <35921504> - The default VHDL library search path is now "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1". VHDL-1504
-Top module language type = Verilog.
-Top module name (Verilog, mixed language): top
-INFO <35901018> - c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/top.sv(1): compiling module top. VERI-1018
-INFO <35901018> - c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv(1): compiling module seven_seg_display. VERI-1018
-INFO <35901018> - c:/users/kanparker/downloads/e155_lab2/src/e155_lab2/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
-INFO <35901018> - C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
-[Parameter Setting Section Start]
-
-	[Parameter Settings for Instance(s): hf_osc]
-	(Module: HSOSC)
-		CLKHF_DIV                 "0b00"
-
-[Parameter Setting Section End]
-
-
-
-WARNING <35935040> - Register \slow_clock/counter_i4 clock is stuck at Zero. VDB-5040
-WARNING <35935040> - Register \slow_clock/counter_i3 clock is stuck at Zero. VDB-5040
-WARNING <35935040> - Register \slow_clock/counter_i2 clock is stuck at Zero. VDB-5040
-WARNING <35935040> - Register \slow_clock/counter_i1 clock is stuck at Zero. VDB-5040
-
-################### Begin Area Report (top)######################
-Number of register bits => 28 of 5280 (0 % )
-CCU2 => 15
-FD1P3XZ => 28
-HSOSC => 1
-IB => 8
-LUT4 => 19
-OB => 14
-################### End Area Report ##################
-Number of odd-length carry chains : 0
-Number of even-length carry chains : 1
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 0
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : slow_clock/int_osc, loads : 28
-  Net : slow_clock/n248, loads : 16
-  Net : slow_clock/gate1_c_N_24[27], loads : 16
-  Net : slow_clock/gate1_c_N_24[26], loads : 15
-  Net : slow_clock/n246, loads : 15
-  Net : slow_clock/gate1_c_N_24[25], loads : 15
-  Net : slow_clock/gate1_c_N_24[24], loads : 14
-  Net : slow_clock/gate1_c_N_24[23], loads : 14
-  Net : slow_clock/n244, loads : 14
-  Net : slow_clock/n242, loads : 13
-################### End Clock Report ##################
-
-################### Begin Constraint Report ######################
-Constraint Summary:
-  Total number of constraints: 0
-  Total number of constraints dropped: 0
-###################  End Constraint Report  ######################
-
-Peak Memory Usage: 98 MB
-
---------------------------------------------------------------
-Total CPU Time: 5 secs 
-Total REAL Time: 8 secs 
---------------------------------------------------------------
-Checksum -- synthesis -- netlist: b85063d444b01c42a513454944084a647d6e6fa5
-
-
-
-postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o e155_lab2_impl_1_syn.udb e155_lab2_impl_1.vm
-POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2024.2.0.3.0
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o e155_lab2_impl_1_syn.udb -gui -msgset C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/promote.xml e155_lab2_impl_1.vm 
-   Architecture:     iCE40UP
-   Device:           iCE40UP5K
-   Package:          SG48
-   Performance:      High-Performance_1.2V
-Reading input file 'e155_lab2_impl_1.vm' ...
-CPU Time to convert: 0.046875
-REAL Time to convert: 0
-convert PEAK Memory Usage: 34 MB
-convert CURRENT Memory Usage: 34 MB
-Removing unused logic ...
-Starting design annotation....
- 
-Constraint Summary:
-   Total number of constraints: 1
-   Total number of constraints dropped: 0
- 
-Writing output file 'e155_lab2_impl_1_syn.udb'.
-POSTSYN finished successfully.
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 43 MB
-Checksum -- postsyn: 89fc637873bf25d366f320e1c24286526973b6c9
-
-
-
 pnmainc -log pnmain "e155_lab2_impl_1_map.tcl"
 map:  version Radiant Software (64-bit) 2024.2.0.3.0
 
@@ -286,7 +8,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:   map -i e155_lab2_impl_1_syn.udb -o e155_lab2_impl_1_map.udb -mp e155_lab2_impl_1.mrp -hierrpt -gui -msgset C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/promote.xml 
+Command line:   map -pdc C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/e155_lab2.pdc -i e155_lab2_impl_1_syn.udb -o e155_lab2_impl_1_map.udb -mp e155_lab2_impl_1.mrp -hierrpt -gui -msgset C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/promote.xml 
 
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
@@ -357,21 +79,21 @@ Running physical design DRC...
    Number of errors:    0
 
 Constraint Summary:
-   Total number of constraints: 1
+   Total number of constraints: 23
    Total number of constraints dropped: 0
 
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 66 MB
+Peak Memory Usage: 67 MB
 
-Checksum -- map: 7dbd8b82b8d80ddfa50dab026ed6c1cd1f527900
+Checksum -- map: 3adf3c7540dcc63c2fbe66b827b7714a33465b08
 Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
 
 pnmainc -log pnmain "e155_lab2_impl_1_par.tcl"
 
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Sun Sep  7 14:46:13 2025
+PARed on: Sun Sep  7 19:00:42 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab2_impl_1_map.udb e155_lab2_impl_1_par.dir/5_1.udb 
@@ -390,7 +112,7 @@ Package: SG48
 Performance Grade:   High-Performance_1.2V
 
 Constraint Summary
-   Total number of constraints: 1
+   Total number of constraints: 23
    Total number of constraints dropped: 0
 
 Number of Signals: 114
@@ -420,9 +142,8 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 22 pins locked (0% locked).
-.
-...........
+   22 out of 22 pins locked (100% locked).
+
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -433,7 +154,7 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 11410.
+Placer score = 17464.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE             27/2640          1% used
@@ -443,7 +164,7 @@ Finished Placer Phase 1. CPU time: 5 secs , REAL time: 5 secs
 Starting Placer Phase 2.
 .
 
-Placer score =  11402
+Placer score =  17384
 Finished Placer Phase 2.  CPU time: 5 secs , REAL time: 5 secs 
 
 
@@ -467,19 +188,19 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+------------+------------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+----------------+------------+------------+------------+
-| 0        | 1 / 14 (  7%)  | 3.3V       |            |            |
-| 1        | 14 / 14 (100%) | 3.3V       |            |            |
-| 2        | 7 / 8 ( 87%)   | 3.3V       |            |            |
+| 0        | 4 / 14 ( 28%)  | 3.3V       |            |            |
+| 1        | 10 / 14 ( 71%) | 3.3V       |            |            |
+| 2        | 8 / 8 (100%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
 Total Placer CPU time: 5 secs , REAL time: 5 secs 
 
 
-Checksum -- place: fdc2e0d5caf9923698104c0ce1d09231a1b1eaa5
+Checksum -- place: e99040255b84a12e9c74e17e5ecae6eb715ca2c4
 Writing design to file e155_lab2_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 14:46:18 09/07/25
+Start NBR router at 19:00:47 09/07/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -509,35 +230,35 @@ Primary clocks (1 used out of 8 available):
 Completed routing resource preassignment
     TimerIf::skewscore 0
 
-Start NBR section for initial routing at 14:46:19 09/07/25
+Start NBR section for initial routing at 19:00:47 09/07/25
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 6.811ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 14:46:19 09/07/25
+Start NBR section for normal routing at 19:00:48 09/07/25
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 6.811ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 14:46:19 09/07/25
+Start NBR section for setup/hold timing optimization with effort level 3 at 19:00:48 09/07/25
 Changing speed to m;   changing temperature to -40
 Changing speed to 6;   changing temperature to 100
 
-Start NBR section for post-routing at 14:46:19 09/07/25
+Start NBR section for post-routing at 19:00:48 09/07/25
 
 End NBR router with 0 unrouted connection(s)
 Changing speed to m;   changing temperature to -40
 Changing speed to 6;   changing temperature to 100
 
-Checksum -- route: dce58f03f0cb4f936347f8e23baa5a72e78a25c5
+Checksum -- route: 77547d48af4833f52ac16b93f8e47c06fadf5949
 
-Total CPU time 0 secs 
+Total CPU time 1 secs 
 Total REAL time: 0 secs 
 Completely routed.
 End of route.  217 routed (100.00%); 0 unrouted.
@@ -557,7 +278,7 @@ Note: user must run 'timing' for timing closure signoff.
 
 Total CPU  Time: 6 secs 
 Total REAL Time: 6 secs 
-Peak Memory Usage: 127.23 MB
+Peak Memory Usage: 127.51 MB
 
 
 par done!
@@ -570,7 +291,7 @@ Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /6 secs 
 
 timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "e155_lab2_impl_1.twr" "e155_lab2_impl_1.udb" 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt e155_lab2_impl_1.twr e155_lab2_impl_1.udb -gui -msgset C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/promote.xml
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt e155_lab2_impl_1.twr e155_lab2_impl_1.udb -gui -msgset C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/promote.xml
 Starting design reading...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
@@ -600,7 +321,7 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs 
 Peak Memory Usage: 103 MB
 
- 0.616862s wall, 0.500000s user + 0.093750s system = 0.593750s CPU (96.3%)
+ 0.631077s wall, 0.609375s user + 0.000000s system = 0.609375s CPU (96.6%)
 
 
 tmcheck -par "e155_lab2_impl_1.par"  
@@ -620,7 +341,7 @@ Package: SG48
 Performance Grade:   High-Performance_1.2V
 
 Constraint Summary
-   Total number of constraints: 1
+   Total number of constraints: 23
    Total number of constraints dropped: 0
 
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
@@ -647,12 +368,12 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/impl_1/e155_lab2_impl_1.bin".
+Saving bit stream in "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/impl_1/e155_lab2_impl_1.bin".
 INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 117 MB
+Total REAL Time: 6 secs 
+Peak Memory Usage: 118 MB
 
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /2 secs 
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /6 secs 

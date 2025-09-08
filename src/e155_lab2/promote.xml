@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/kanparker/Downloads/e155_lab2/src/e155_lab2/promote.xml" version="Diamond (64-bit) 2024.2.0.3.0" date="Sun Sep 07 14:46:27 2025" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/promote.xml" version="Diamond (64-bit) 2024.2.0.3.0" date="Sun Sep 07 19:01:03 2025" vendor="Lattice Semiconductor Corporation" >
   <msg mid="2043138" type="Error" internal="true" />
   <msg mid="2043318" type="Warning" internal="true" />
   <msg mid="35901328" type="Info" internal="true" />
-  <msg mid="35901138" type="Error" internal="true" />
   <msg mid="2043188" type="Error" internal="true" />
+  <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35901138" type="Error" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
   <msg mid="2044366" type="Error" internal="true" />
   <msg mid="2043972" type="Info" internal="true" />
-  <msg mid="35921504" type="Info" internal="true" />
   <msg mid="2043137" type="Error" internal="true" />
   <msg mid="2044344" type="Error" internal="true" />
   <msg mid="35901899" type="Warning" internal="true" />
