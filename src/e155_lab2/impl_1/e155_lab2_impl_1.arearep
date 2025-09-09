@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
 Register bits:  28 of 5280 (0.530%)
-I/O cells:      22
+I/O cells:      23
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        15          100.0
@@ -9,18 +9,11 @@ I/O cells:      22
                               HSOSC         1          100.0
                                  IB         8          100.0
                                LUT4        19          100.0
-                                 OB        14          100.0
+                                 OB        15          100.0
 SUB MODULES
                       clock_divider         1
                   seven_seg_display         1
-                              TOTAL        87
-----------------------------------------------------------------------
-Report for cell seven_seg_display.v1
-Instance Path : seven_seg_counter
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7           36.8
-                              TOTAL         7
+                              TOTAL        88
 ----------------------------------------------------------------------
 Report for cell clock_divider.v1
 Instance Path : slow_clock
@@ -30,3 +23,10 @@ Instance Path : slow_clock
                             FD1P3XZ        28          100.0
                               HSOSC         1          100.0
                               TOTAL        44
+----------------------------------------------------------------------
+Report for cell seven_seg_display.v1
+Instance Path : seven_seg_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           36.8
+                              TOTAL         7

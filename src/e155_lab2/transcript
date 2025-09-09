@@ -1,0 +1,214 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project e155-lab2
+# Compile of testbench_seven_seg_display.sv failed with 18 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 18 errors.
+# Compile of testbench_seven_seg_display.sv failed with 10 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 10 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 3 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of testbench_seven_seg_display.sv failed with 3 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Error opening C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv
+# Path name 'C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv' doesn't exist.
+# Error opening C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv
+# Path name 'C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv' doesn't exist.
+# Error opening C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv
+# Path name 'C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/(vlog-13069) C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv' doesn't exist.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 2 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of testbench_seven_seg_display.sv failed with 1 errors.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of testbench_seven_seg_display.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of testbench_seven_seg_display.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.testbench_lab2 -L iCE40UP -voptargs=+acc
+# vsim -gui work.testbench_lab2 -L iCE40UP -voptargs="+acc" 
+# Start time: 19:26:44 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(36): (vopt-7063) Failed to find 's_imput' in hierarchical name 's_imput'.
+#         Region: testbench_lab2
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(56): (vopt-7063) Failed to find 'segexpected' in hierarchical name 'segexpected'.
+#         Region: testbench_lab2
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 19:26:45 on Sep 08,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 20
+# Compile of testbench_seven_seg_display.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.testbench_lab2
+# vsim -gui -L iCE40UP -voptargs="+acc" work.testbench_lab2 
+# Start time: 19:28:45 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(91): (vopt-7063) Failed to find 'segexpected' in hierarchical name 'segexpected'.
+#         Region: testbench_lab2
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 19:28:45 on Sep 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of testbench_seven_seg_display.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.testbench_lab2
+# vsim -gui -L iCE40UP -voptargs="+acc" work.testbench_lab2 
+# Start time: 19:29:40 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_lab2(fast)
+# Loading work.top(fast)
+# Loading work.seven_seg_display(fast)
+# Loading work.clock_divider(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave -position insertpoint  \
+sim:/testbench_lab2/clk
+add wave -position insertpoint  \
+sim:/testbench_lab2/gate1
+add wave -position insertpoint  \
+sim:/testbench_lab2/gate2
+add wave -position insertpoint  \
+sim:/testbench_lab2/s_input
+run -all
+#        255 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(96)
+#    Time: 254500285856 ps  Iteration: 0  Instance: /testbench_lab2
+# Break in Module testbench_lab2 at C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv line 96
+# Causality operation skipped due to absence of debug database file
+resart -f
+# invalid command name "resart"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_lab2(fast)
+# Loading work.top(fast)
+# Loading work.seven_seg_display(fast)
+# Loading work.clock_divider(fast)
+# Loading iCE40UP.HSOSC(fast)
+run -all
+#        255 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(96)
+#    Time: 254500285856 ps  Iteration: 0  Instance: /testbench_lab2
+# Break in Module testbench_lab2 at C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv line 96
+add wave -position insertpoint  \
+sim:/testbench_lab2/seg
+add wave -position insertpoint  \
+sim:/testbench_lab2/seg_expected
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_lab2(fast)
+# Loading work.top(fast)
+# Loading work.seven_seg_display(fast)
+# Loading work.clock_divider(fast)
+# Loading iCE40UP.HSOSC(fast)
+run -all
+#        255 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(96)
+#    Time: 254500285856 ps  Iteration: 0  Instance: /testbench_lab2
+# Break in Module testbench_lab2 at C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv line 96
+# Compile of testbench_seven_seg_display.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_lab2(fast)
+# Loading work.top(fast)
+# Loading work.seven_seg_display(fast)
+# Loading work.clock_divider(fast)
+# Loading iCE40UP.HSOSC(fast)
+run -all
+#        256 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv(96)
+#    Time: 254500285856 ps  Iteration: 0  Instance: /testbench_lab2
+# Break in Module testbench_lab2 at C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/testbench_seven_seg_display.sv line 96

@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Sun Sep  7 19:00:33 2025
+Mapped on: Mon Sep  8 18:33:48 2025
 
 Design Information
 ------------------
@@ -27,15 +27,15 @@ Design Summary
    Number of LUT4s:            50 out of  5280 (1%)
       Number of logic LUT4s:              20
       Number of ripple logic:             15 (30 LUT4s)
-   Number of IO sites used:   22 out of 39 (56%)
-      Number of IO sites used for general PIO: 22
+   Number of IO sites used:   23 out of 39 (59%)
+      Number of IO sites used for general PIO: 23
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 22 out of 36 (61%)
+      Number of IO sites used for PIO+I3C: 23 out of 36 (64%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 22 out of 39 (56%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 23 out of 39 (59%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -52,11 +52,11 @@ Design Summary
       Net slow_clock.int_osc: 15 loads, 15 rising, 0 falling (Driver: Pin
      slow_clock.hf_osc.osc_inst/CLKHF)
    Number of Clock Enables:  1
-      Net gate2_pad.vcc: 1 loads, 0 SLICEs
+      Net clk_pad.vcc: 1 loads, 0 SLICEs
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net gate2_pad.vcc: 11 loads
-      Net gate1_c: 7 loads
+      Net clk_pad.vcc: 11 loads
+      Net clk_c: 8 loads
       Net sev_seg_in[0]: 7 loads
       Net sev_seg_in[1]: 7 loads
       Net sev_seg_in[2]: 7 loads
@@ -111,6 +111,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s1[3]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | gate2               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | gate1               | OUTPUT    |           |       |       |           |
@@ -125,8 +127,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | led[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| seg[0]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -136,6 +136,8 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
+| seg[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | seg[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[2]              | OUTPUT    |           |       |       |           |
@@ -159,8 +161,8 @@ OSC Summary
 
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            slow_clock/hf_osc.osc_inst
-  Power UP:                            NODE     gate2_pad.vcc
-  Enable Signal:                       NODE     gate2_pad.vcc
+  Power UP:                            NODE     clk_pad.vcc
+  Enable Signal:                       NODE     clk_pad.vcc
   OSC Output:                          NODE     slow_clock.int_osc
   DIV Setting:                                  00
 
@@ -182,9 +184,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: 3adf3c7540dcc63c2fbe66b827b7714a33465b08
-
-
+Checksum -- map: 281fb93c23cc3cd4af79ffe5d9f9d0a868ddfc5d
 
 
 

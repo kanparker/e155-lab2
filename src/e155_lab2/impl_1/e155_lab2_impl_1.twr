@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2024.2.0.3.0
 
-Sun Sep  7 19:00:49 2025
+Mon Sep  8 18:34:00 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -52,7 +52,7 @@ create_clock -name {slow_clock/int_osc} -period 20.8333 [get_pins {slow_clock/hf
 
 1.2  Constraint Coverage
 ---------------------------
-Constraint Coverage: 54.5%
+Constraint Coverage: 53.9604%
 
 
 1.3  Overall Summary
@@ -100,11 +100,11 @@ s1[0]                                   |                     input
 s1[1]                                   |                     input
 s1[2]                                   |                     input
 s1[3]                                   |                     input
+clk                                     |                    output
 gate2                                   |                    output
-gate1                                   |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        22
+Number of I/O ports without constraint  |                        23
                                         |                          
 -------------------------------------------------------------------
 
@@ -178,8 +178,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i32/D  (SLICE_R3C29C)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i32/D  (SLICE_R3C31C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 29
@@ -201,92 +201,92 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.000                 16.246  2       
 slow_clock/add_4_add_5_23/CI1->slow_clock/add_4_add_5_23/CO1
-                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+                                          SLICE_R3C30D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
 slow_clock/n244                                              NET DELAY               0.555                 17.078  2       
 slow_clock/add_4_add_5_25/CI0->slow_clock/add_4_add_5_25/CO0
-                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
+                                          SLICE_R3C31A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
 slow_clock/n737                                              NET DELAY               0.000                 17.355  2       
 slow_clock/add_4_add_5_25/CI1->slow_clock/add_4_add_5_25/CO1
-                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
+                                          SLICE_R3C31A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
 slow_clock/n246                                              NET DELAY               0.000                 17.632  2       
 slow_clock/add_4_add_5_27/CI0->slow_clock/add_4_add_5_27/CO0
-                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 17.909  2       
+                                          SLICE_R3C31B       CIN0_TO_COUT0_DELAY     0.277                 17.909  2       
 slow_clock/n740                                              NET DELAY               0.000                 17.909  2       
 slow_clock/add_4_add_5_27/CI1->slow_clock/add_4_add_5_27/CO1
-                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 18.186  2       
+                                          SLICE_R3C31B       CIN1_TO_COUT1_DELAY     0.277                 18.186  2       
 slow_clock/n248                                              NET DELAY               0.661                 18.847  2       
 slow_clock/add_4_add_5_29/D0->slow_clock/add_4_add_5_29/S0
-                                          SLICE_R3C29C       D0_TO_F0_DELAY          0.476                 19.323  1       
-slow_clock/gate1_c_N_24[27]                                  NET DELAY               0.000                 19.323  1       
+                                          SLICE_R3C31C       D0_TO_F0_DELAY          0.476                 19.323  1       
+slow_clock/clk_c_N_24[27]                                    NET DELAY               0.000                 19.323  1       
 slow_clock/counter_i32/D                                     ENDPOINT                0.000                 19.323  1       
 
 
@@ -310,8 +310,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i31/D  (SLICE_R3C29B)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i31/D  (SLICE_R3C31B)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 28
@@ -333,89 +333,89 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.000                 16.246  2       
 slow_clock/add_4_add_5_23/CI1->slow_clock/add_4_add_5_23/CO1
-                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+                                          SLICE_R3C30D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
 slow_clock/n244                                              NET DELAY               0.555                 17.078  2       
 slow_clock/add_4_add_5_25/CI0->slow_clock/add_4_add_5_25/CO0
-                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
+                                          SLICE_R3C31A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
 slow_clock/n737                                              NET DELAY               0.000                 17.355  2       
 slow_clock/add_4_add_5_25/CI1->slow_clock/add_4_add_5_25/CO1
-                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
+                                          SLICE_R3C31A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
 slow_clock/n246                                              NET DELAY               0.000                 17.632  2       
 slow_clock/add_4_add_5_27/CI0->slow_clock/add_4_add_5_27/CO0
-                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 17.909  2       
+                                          SLICE_R3C31B       CIN0_TO_COUT0_DELAY     0.277                 17.909  2       
 slow_clock/n740                                              NET DELAY               0.661                 18.570  2       
 slow_clock/add_4_add_5_27/D1->slow_clock/add_4_add_5_27/S1
-                                          SLICE_R3C29B       D1_TO_F1_DELAY          0.476                 19.046  1       
-slow_clock/gate1_c_N_24[26]                                  NET DELAY               0.000                 19.046  1       
+                                          SLICE_R3C31B       D1_TO_F1_DELAY          0.476                 19.046  1       
+slow_clock/clk_c_N_24[26]                                    NET DELAY               0.000                 19.046  1       
 slow_clock/counter_i31/D                                     ENDPOINT                0.000                 19.046  1       
 
 
@@ -440,8 +440,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i30/D  (SLICE_R3C29B)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i30/D  (SLICE_R3C31B)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 27
@@ -463,86 +463,86 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.000                 16.246  2       
 slow_clock/add_4_add_5_23/CI1->slow_clock/add_4_add_5_23/CO1
-                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+                                          SLICE_R3C30D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
 slow_clock/n244                                              NET DELAY               0.555                 17.078  2       
 slow_clock/add_4_add_5_25/CI0->slow_clock/add_4_add_5_25/CO0
-                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
+                                          SLICE_R3C31A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
 slow_clock/n737                                              NET DELAY               0.000                 17.355  2       
 slow_clock/add_4_add_5_25/CI1->slow_clock/add_4_add_5_25/CO1
-                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
+                                          SLICE_R3C31A       CIN1_TO_COUT1_DELAY     0.277                 17.632  2       
 slow_clock/n246                                              NET DELAY               0.661                 18.293  2       
 slow_clock/add_4_add_5_27/D0->slow_clock/add_4_add_5_27/S0
-                                          SLICE_R3C29B       D0_TO_F0_DELAY          0.476                 18.769  1       
-slow_clock/gate1_c_N_24[25]                                  NET DELAY               0.000                 18.769  1       
+                                          SLICE_R3C31B       D0_TO_F0_DELAY          0.476                 18.769  1       
+slow_clock/clk_c_N_24[25]                                    NET DELAY               0.000                 18.769  1       
 slow_clock/counter_i30/D                                     ENDPOINT                0.000                 18.769  1       
 
 
@@ -567,8 +567,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i29/D  (SLICE_R3C29A)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i29/D  (SLICE_R3C31A)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 26
@@ -590,83 +590,83 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.000                 16.246  2       
 slow_clock/add_4_add_5_23/CI1->slow_clock/add_4_add_5_23/CO1
-                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+                                          SLICE_R3C30D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
 slow_clock/n244                                              NET DELAY               0.555                 17.078  2       
 slow_clock/add_4_add_5_25/CI0->slow_clock/add_4_add_5_25/CO0
-                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
+                                          SLICE_R3C31A       CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
 slow_clock/n737                                              NET DELAY               0.661                 18.016  2       
 slow_clock/add_4_add_5_25/D1->slow_clock/add_4_add_5_25/S1
-                                          SLICE_R3C29A       D1_TO_F1_DELAY          0.476                 18.492  1       
-slow_clock/gate1_c_N_24[24]                                  NET DELAY               0.000                 18.492  1       
+                                          SLICE_R3C31A       D1_TO_F1_DELAY          0.476                 18.492  1       
+slow_clock/clk_c_N_24[24]                                    NET DELAY               0.000                 18.492  1       
 slow_clock/counter_i29/D                                     ENDPOINT                0.000                 18.492  1       
 
 
@@ -691,8 +691,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i28/D  (SLICE_R3C29A)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i28/D  (SLICE_R3C31A)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 25
@@ -714,80 +714,80 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.000                 16.246  2       
 slow_clock/add_4_add_5_23/CI1->slow_clock/add_4_add_5_23/CO1
-                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+                                          SLICE_R3C30D       CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
 slow_clock/n244                                              NET DELAY               1.216                 17.739  2       
 slow_clock/add_4_add_5_25/D0->slow_clock/add_4_add_5_25/S0
-                                          SLICE_R3C29A       D0_TO_F0_DELAY          0.476                 18.215  1       
-slow_clock/gate1_c_N_24[23]                                  NET DELAY               0.000                 18.215  1       
+                                          SLICE_R3C31A       D0_TO_F0_DELAY          0.476                 18.215  1       
+slow_clock/clk_c_N_24[23]                                    NET DELAY               0.000                 18.215  1       
 slow_clock/counter_i28/D                                     ENDPOINT                0.000                 18.215  1       
 
 
@@ -812,8 +812,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i27/D  (SLICE_R3C28D)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i27/D  (SLICE_R3C30D)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 24
@@ -835,77 +835,77 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.000                 15.969  2       
 slow_clock/add_4_add_5_23/CI0->slow_clock/add_4_add_5_23/CO0
-                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+                                          SLICE_R3C30D       CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
 slow_clock/n734                                              NET DELAY               0.661                 16.907  2       
 slow_clock/add_4_add_5_23/D1->slow_clock/add_4_add_5_23/S1
-                                          SLICE_R3C28D       D1_TO_F1_DELAY          0.476                 17.383  1       
-slow_clock/gate1_c_N_24[22]                                  NET DELAY               0.000                 17.383  1       
+                                          SLICE_R3C30D       D1_TO_F1_DELAY          0.476                 17.383  1       
+slow_clock/clk_c_N_24[22]                                    NET DELAY               0.000                 17.383  1       
 slow_clock/counter_i27/D                                     ENDPOINT                0.000                 17.383  1       
 
 
@@ -930,8 +930,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i26/D  (SLICE_R3C28D)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i26/D  (SLICE_R3C30D)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 23
@@ -953,74 +953,74 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.000                 15.692  2       
 slow_clock/add_4_add_5_21/CI1->slow_clock/add_4_add_5_21/CO1
-                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+                                          SLICE_R3C30C       CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
 slow_clock/n242                                              NET DELAY               0.661                 16.630  2       
 slow_clock/add_4_add_5_23/D0->slow_clock/add_4_add_5_23/S0
-                                          SLICE_R3C28D       D0_TO_F0_DELAY          0.476                 17.106  1       
-slow_clock/gate1_c_N_24[21]                                  NET DELAY               0.000                 17.106  1       
+                                          SLICE_R3C30D       D0_TO_F0_DELAY          0.476                 17.106  1       
+slow_clock/clk_c_N_24[21]                                    NET DELAY               0.000                 17.106  1       
 slow_clock/counter_i26/D                                     ENDPOINT                0.000                 17.106  1       
 
 
@@ -1045,8 +1045,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i25/D  (SLICE_R3C28C)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i25/D  (SLICE_R3C30C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 22
@@ -1068,71 +1068,71 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.000                 15.415  2       
 slow_clock/add_4_add_5_21/CI0->slow_clock/add_4_add_5_21/CO0
-                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+                                          SLICE_R3C30C       CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
 slow_clock/n731                                              NET DELAY               0.661                 16.353  2       
 slow_clock/add_4_add_5_21/D1->slow_clock/add_4_add_5_21/S1
-                                          SLICE_R3C28C       D1_TO_F1_DELAY          0.476                 16.829  1       
-slow_clock/gate1_c_N_24[20]                                  NET DELAY               0.000                 16.829  1       
+                                          SLICE_R3C30C       D1_TO_F1_DELAY          0.476                 16.829  1       
+slow_clock/clk_c_N_24[20]                                    NET DELAY               0.000                 16.829  1       
 slow_clock/counter_i25/D                                     ENDPOINT                0.000                 16.829  1       
 
 
@@ -1157,8 +1157,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i24/D  (SLICE_R3C28C)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i24/D  (SLICE_R3C30C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 21
@@ -1180,68 +1180,68 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.000                 15.138  2       
 slow_clock/add_4_add_5_19/CI1->slow_clock/add_4_add_5_19/CO1
-                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+                                          SLICE_R3C30B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
 slow_clock/n240                                              NET DELAY               0.661                 16.076  2       
 slow_clock/add_4_add_5_21/D0->slow_clock/add_4_add_5_21/S0
-                                          SLICE_R3C28C       D0_TO_F0_DELAY          0.476                 16.552  1       
-slow_clock/gate1_c_N_24[19]                                  NET DELAY               0.000                 16.552  1       
+                                          SLICE_R3C30C       D0_TO_F0_DELAY          0.476                 16.552  1       
+slow_clock/clk_c_N_24[19]                                    NET DELAY               0.000                 16.552  1       
 slow_clock/counter_i24/D                                     ENDPOINT                0.000                 16.552  1       
 
 
@@ -1266,8 +1266,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C26A)
-Path End         : slow_clock/counter_i23/D  (SLICE_R3C28B)
+Path Begin       : slow_clock/counter_i5/Q  (SLICE_R3C28A)
+Path End         : slow_clock/counter_i23/D  (SLICE_R3C30B)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 20
@@ -1289,65 +1289,65 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 slow_clock/counter_i5/CK->slow_clock/counter_i5/Q
-                                          SLICE_R3C26A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
+                                          SLICE_R3C28A       CLK_TO_Q1_DELAY         1.388                  6.887  1       
 slow_clock/counter[4]                                        NET DELAY               2.075                  8.962  1       
 slow_clock/add_4_add_5_1/B1->slow_clock/add_4_add_5_1/CO1
-                                          SLICE_R3C26A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+                                          SLICE_R3C28A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
 slow_clock/n222                                              NET DELAY               0.000                  9.319  2       
 slow_clock/add_4_add_5_3/CI0->slow_clock/add_4_add_5_3/CO0
-                                          SLICE_R3C26B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
 slow_clock/n704                                              NET DELAY               0.000                  9.596  2       
 slow_clock/add_4_add_5_3/CI1->slow_clock/add_4_add_5_3/CO1
-                                          SLICE_R3C26B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+                                          SLICE_R3C28B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
 slow_clock/n224                                              NET DELAY               0.000                  9.873  2       
 slow_clock/add_4_add_5_5/CI0->slow_clock/add_4_add_5_5/CO0
-                                          SLICE_R3C26C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+                                          SLICE_R3C28C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
 slow_clock/n707                                              NET DELAY               0.000                 10.150  2       
 slow_clock/add_4_add_5_5/CI1->slow_clock/add_4_add_5_5/CO1
-                                          SLICE_R3C26C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+                                          SLICE_R3C28C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
 slow_clock/n226                                              NET DELAY               0.000                 10.427  2       
 slow_clock/add_4_add_5_7/CI0->slow_clock/add_4_add_5_7/CO0
-                                          SLICE_R3C26D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+                                          SLICE_R3C28D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
 slow_clock/n710                                              NET DELAY               0.000                 10.704  2       
 slow_clock/add_4_add_5_7/CI1->slow_clock/add_4_add_5_7/CO1
-                                          SLICE_R3C26D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+                                          SLICE_R3C28D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
 slow_clock/n228                                              NET DELAY               0.555                 11.536  2       
 slow_clock/add_4_add_5_9/CI0->slow_clock/add_4_add_5_9/CO0
-                                          SLICE_R3C27A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+                                          SLICE_R3C29A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
 slow_clock/n713                                              NET DELAY               0.000                 11.813  2       
 slow_clock/add_4_add_5_9/CI1->slow_clock/add_4_add_5_9/CO1
-                                          SLICE_R3C27A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+                                          SLICE_R3C29A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
 slow_clock/n230                                              NET DELAY               0.000                 12.090  2       
 slow_clock/add_4_add_5_11/CI0->slow_clock/add_4_add_5_11/CO0
-                                          SLICE_R3C27B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+                                          SLICE_R3C29B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
 slow_clock/n716                                              NET DELAY               0.000                 12.367  2       
 slow_clock/add_4_add_5_11/CI1->slow_clock/add_4_add_5_11/CO1
-                                          SLICE_R3C27B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+                                          SLICE_R3C29B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
 slow_clock/n232                                              NET DELAY               0.000                 12.644  2       
 slow_clock/add_4_add_5_13/CI0->slow_clock/add_4_add_5_13/CO0
-                                          SLICE_R3C27C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+                                          SLICE_R3C29C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
 slow_clock/n719                                              NET DELAY               0.000                 12.921  2       
 slow_clock/add_4_add_5_13/CI1->slow_clock/add_4_add_5_13/CO1
-                                          SLICE_R3C27C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+                                          SLICE_R3C29C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
 slow_clock/n234                                              NET DELAY               0.000                 13.198  2       
 slow_clock/add_4_add_5_15/CI0->slow_clock/add_4_add_5_15/CO0
-                                          SLICE_R3C27D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+                                          SLICE_R3C29D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
 slow_clock/n722                                              NET DELAY               0.000                 13.475  2       
 slow_clock/add_4_add_5_15/CI1->slow_clock/add_4_add_5_15/CO1
-                                          SLICE_R3C27D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+                                          SLICE_R3C29D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
 slow_clock/n236                                              NET DELAY               0.555                 14.307  2       
 slow_clock/add_4_add_5_17/CI0->slow_clock/add_4_add_5_17/CO0
-                                          SLICE_R3C28A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+                                          SLICE_R3C30A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
 slow_clock/n725                                              NET DELAY               0.000                 14.584  2       
 slow_clock/add_4_add_5_17/CI1->slow_clock/add_4_add_5_17/CO1
-                                          SLICE_R3C28A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+                                          SLICE_R3C30A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
 slow_clock/n238                                              NET DELAY               0.000                 14.861  2       
 slow_clock/add_4_add_5_19/CI0->slow_clock/add_4_add_5_19/CO0
-                                          SLICE_R3C28B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+                                          SLICE_R3C30B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
 slow_clock/n728                                              NET DELAY               0.661                 15.799  2       
 slow_clock/add_4_add_5_19/D1->slow_clock/add_4_add_5_19/S1
-                                          SLICE_R3C28B       D1_TO_F1_DELAY          0.476                 16.275  1       
-slow_clock/gate1_c_N_24[18]                                  NET DELAY               0.000                 16.275  1       
+                                          SLICE_R3C30B       D1_TO_F1_DELAY          0.476                 16.275  1       
+slow_clock/clk_c_N_24[18]                                    NET DELAY               0.000                 16.275  1       
 slow_clock/counter_i23/D                                     ENDPOINT                0.000                 16.275  1       
 
 
@@ -1387,16 +1387,16 @@ Path Slack  (Passed)                                                            
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-slow_clock/counter_i17/D                 |    1.943 ns 
-slow_clock/counter_i32/D                 |    1.943 ns 
-slow_clock/counter_i18/D                 |    1.943 ns 
 slow_clock/counter_i19/D                 |    1.943 ns 
+slow_clock/counter_i32/D                 |    1.943 ns 
 slow_clock/counter_i20/D                 |    1.943 ns 
 slow_clock/counter_i21/D                 |    1.943 ns 
 slow_clock/counter_i22/D                 |    1.943 ns 
 slow_clock/counter_i23/D                 |    1.943 ns 
 slow_clock/counter_i24/D                 |    1.943 ns 
 slow_clock/counter_i25/D                 |    1.943 ns 
+slow_clock/counter_i26/D                 |    1.943 ns 
+slow_clock/counter_i27/D                 |    1.943 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -1419,8 +1419,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : slow_clock/counter_i17/Q  (SLICE_R3C27C)
-Path End         : slow_clock/counter_i17/D  (SLICE_R3C27C)
+Path Begin       : slow_clock/counter_i19/Q  (SLICE_R3C29D)
+Path End         : slow_clock/counter_i19/D  (SLICE_R3C29D)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1435,20 +1435,20 @@ Name                                      Cell/Site Name     Delay Name       In
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
 slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i16/CK   slow_clock/counter_i17/CK}
+{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
                                                              CLOCK PIN        0.000                  3.084  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-slow_clock/counter_i17/CK->slow_clock/counter_i17/Q
-                                          SLICE_R3C27C       CLK_TO_Q1_DELAY  0.779                  3.863  1       
-slow_clock/counter[16]                                       NET DELAY        0.912                  4.775  1       
-slow_clock/add_4_add_5_13/B1->slow_clock/add_4_add_5_13/S1
-                                          SLICE_R3C27C       B1_TO_F1_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[12]                                  NET DELAY        0.000                  5.027  1       
-slow_clock/counter_i17/D                                     ENDPOINT         0.000                  5.027  1       
+slow_clock/counter_i19/CK->slow_clock/counter_i19/Q
+                                          SLICE_R3C29D       CLK_TO_Q1_DELAY  0.779                  3.863  1       
+slow_clock/counter[18]                                       NET DELAY        0.912                  4.775  1       
+slow_clock/add_4_add_5_15/B1->slow_clock/add_4_add_5_15/S1
+                                          SLICE_R3C29D       B1_TO_F1_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[14]                                    NET DELAY        0.000                  5.027  1       
+slow_clock/counter_i19/D                                     ENDPOINT         0.000                  5.027  1       
 
 
 Destination Clock Path
@@ -1457,7 +1457,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
 slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i16/CK   slow_clock/counter_i17/CK}
+{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
                                                              CLOCK PIN        0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1472,8 +1472,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i32/Q  (SLICE_R3C29C)
-Path End         : slow_clock/counter_i32/D  (SLICE_R3C29C)
+Path Begin       : slow_clock/counter_i32/Q  (SLICE_R3C31C)
+Path End         : slow_clock/counter_i32/D  (SLICE_R3C31C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1495,11 +1495,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i32/CK->slow_clock/counter_i32/Q
-                                          SLICE_R3C29C       CLK_TO_Q0_DELAY  0.779                  3.863  7       
-slow_clock/gate1_c                                           NET DELAY        0.912                  4.775  7       
+                                          SLICE_R3C31C       CLK_TO_Q0_DELAY  0.779                  3.863  8       
+slow_clock/clk_c                                             NET DELAY        0.912                  4.775  8       
 slow_clock/add_4_add_5_29/B0->slow_clock/add_4_add_5_29/S0
-                                          SLICE_R3C29C       B0_TO_F0_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[27]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C31C       B0_TO_F0_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[27]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i32/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1523,114 +1523,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i18/Q  (SLICE_R3C27D)
-Path End         : slow_clock/counter_i18/D  (SLICE_R3C27D)
-Source Clock     : slow_clock/int_osc (R)
-Destination Clock: slow_clock/int_osc (R)
-Logic Level      : 2
-Delay Ratio      : 46.9% (route), 53.1% (logic)
-Clock Skew       : 0.000 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 1.943 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
-slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
-                                                             CLOCK PIN        0.000                  3.084  1       
-
-
-Data Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-slow_clock/counter_i18/CK->slow_clock/counter_i18/Q
-                                          SLICE_R3C27D       CLK_TO_Q0_DELAY  0.779                  3.863  1       
-slow_clock/counter[17]                                       NET DELAY        0.912                  4.775  1       
-slow_clock/add_4_add_5_15/B0->slow_clock/add_4_add_5_15/S0
-                                          SLICE_R3C27D       B0_TO_F0_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[13]                                  NET DELAY        0.000                  5.027  1       
-slow_clock/counter_i18/D                                     ENDPOINT         0.000                  5.027  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-                                                             CONSTRAINT       0.000                  0.000  1       
-slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
-slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
-                                                             CLOCK PIN        0.000                  3.084  1       
-                                                             Uncertainty      0.000                  3.084  
-                                                             Hold time        0.000                  3.084  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-Required Time                                                                                       -3.084  
-Arrival Time                                                                                         5.027  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                                 1.943  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : slow_clock/counter_i19/Q  (SLICE_R3C27D)
-Path End         : slow_clock/counter_i19/D  (SLICE_R3C27D)
-Source Clock     : slow_clock/int_osc (R)
-Destination Clock: slow_clock/int_osc (R)
-Logic Level      : 2
-Delay Ratio      : 46.9% (route), 53.1% (logic)
-Clock Skew       : 0.000 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 1.943 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
-slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
-                                                             CLOCK PIN        0.000                  3.084  1       
-
-
-Data Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-slow_clock/counter_i19/CK->slow_clock/counter_i19/Q
-                                          SLICE_R3C27D       CLK_TO_Q1_DELAY  0.779                  3.863  1       
-slow_clock/counter[18]                                       NET DELAY        0.912                  4.775  1       
-slow_clock/add_4_add_5_15/B1->slow_clock/add_4_add_5_15/S1
-                                          SLICE_R3C27D       B1_TO_F1_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[14]                                  NET DELAY        0.000                  5.027  1       
-slow_clock/counter_i19/D                                     ENDPOINT         0.000                  5.027  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-                                                             CONSTRAINT       0.000                  0.000  1       
-slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
-slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
-{slow_clock/counter_i18/CK   slow_clock/counter_i19/CK}
-                                                             CLOCK PIN        0.000                  3.084  1       
-                                                             Uncertainty      0.000                  3.084  
-                                                             Hold time        0.000                  3.084  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-Required Time                                                                                       -3.084  
-Arrival Time                                                                                         5.027  
-----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                                 1.943  
-
-
-
-
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : slow_clock/counter_i20/Q  (SLICE_R3C28A)
-Path End         : slow_clock/counter_i20/D  (SLICE_R3C28A)
+Path Begin       : slow_clock/counter_i20/Q  (SLICE_R3C30A)
+Path End         : slow_clock/counter_i20/D  (SLICE_R3C30A)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1653,11 +1547,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i20/CK->slow_clock/counter_i20/Q
-                                          SLICE_R3C28A       CLK_TO_Q0_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30A       CLK_TO_Q0_DELAY  0.779                  3.863  1       
 slow_clock/counter[19]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_17/B0->slow_clock/add_4_add_5_17/S0
-                                          SLICE_R3C28A       B0_TO_F0_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[15]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30A       B0_TO_F0_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[15]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i20/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1680,10 +1574,10 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i21/Q  (SLICE_R3C28A)
-Path End         : slow_clock/counter_i21/D  (SLICE_R3C28A)
+Path Begin       : slow_clock/counter_i21/Q  (SLICE_R3C30A)
+Path End         : slow_clock/counter_i21/D  (SLICE_R3C30A)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1706,11 +1600,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i21/CK->slow_clock/counter_i21/Q
-                                          SLICE_R3C28A       CLK_TO_Q1_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30A       CLK_TO_Q1_DELAY  0.779                  3.863  1       
 slow_clock/counter[20]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_17/B1->slow_clock/add_4_add_5_17/S1
-                                          SLICE_R3C28A       B1_TO_F1_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[16]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30A       B1_TO_F1_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[16]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i21/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1733,10 +1627,10 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i22/Q  (SLICE_R3C28B)
-Path End         : slow_clock/counter_i22/D  (SLICE_R3C28B)
+Path Begin       : slow_clock/counter_i22/Q  (SLICE_R3C30B)
+Path End         : slow_clock/counter_i22/D  (SLICE_R3C30B)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1759,11 +1653,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i22/CK->slow_clock/counter_i22/Q
-                                          SLICE_R3C28B       CLK_TO_Q0_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30B       CLK_TO_Q0_DELAY  0.779                  3.863  1       
 slow_clock/counter[21]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_19/B0->slow_clock/add_4_add_5_19/S0
-                                          SLICE_R3C28B       B0_TO_F0_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[17]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30B       B0_TO_F0_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[17]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i22/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1786,10 +1680,10 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i23/Q  (SLICE_R3C28B)
-Path End         : slow_clock/counter_i23/D  (SLICE_R3C28B)
+Path Begin       : slow_clock/counter_i23/Q  (SLICE_R3C30B)
+Path End         : slow_clock/counter_i23/D  (SLICE_R3C30B)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1812,11 +1706,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i23/CK->slow_clock/counter_i23/Q
-                                          SLICE_R3C28B       CLK_TO_Q1_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30B       CLK_TO_Q1_DELAY  0.779                  3.863  1       
 slow_clock/counter[22]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_19/B1->slow_clock/add_4_add_5_19/S1
-                                          SLICE_R3C28B       B1_TO_F1_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[18]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30B       B1_TO_F1_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[18]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i23/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1839,10 +1733,10 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i24/Q  (SLICE_R3C28C)
-Path End         : slow_clock/counter_i24/D  (SLICE_R3C28C)
+Path Begin       : slow_clock/counter_i24/Q  (SLICE_R3C30C)
+Path End         : slow_clock/counter_i24/D  (SLICE_R3C30C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1865,11 +1759,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i24/CK->slow_clock/counter_i24/Q
-                                          SLICE_R3C28C       CLK_TO_Q0_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30C       CLK_TO_Q0_DELAY  0.779                  3.863  1       
 slow_clock/counter[23]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_21/B0->slow_clock/add_4_add_5_21/S0
-                                          SLICE_R3C28C       B0_TO_F0_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[19]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30C       B0_TO_F0_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[19]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i24/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1892,10 +1786,10 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : slow_clock/counter_i25/Q  (SLICE_R3C28C)
-Path End         : slow_clock/counter_i25/D  (SLICE_R3C28C)
+Path Begin       : slow_clock/counter_i25/Q  (SLICE_R3C30C)
+Path End         : slow_clock/counter_i25/D  (SLICE_R3C30C)
 Source Clock     : slow_clock/int_osc (R)
 Destination Clock: slow_clock/int_osc (R)
 Logic Level      : 2
@@ -1918,11 +1812,11 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 slow_clock/counter_i25/CK->slow_clock/counter_i25/Q
-                                          SLICE_R3C28C       CLK_TO_Q1_DELAY  0.779                  3.863  1       
+                                          SLICE_R3C30C       CLK_TO_Q1_DELAY  0.779                  3.863  1       
 slow_clock/counter[24]                                       NET DELAY        0.912                  4.775  1       
 slow_clock/add_4_add_5_21/B1->slow_clock/add_4_add_5_21/S1
-                                          SLICE_R3C28C       B1_TO_F1_DELAY   0.252                  5.027  1       
-slow_clock/gate1_c_N_24[20]                                  NET DELAY        0.000                  5.027  1       
+                                          SLICE_R3C30C       B1_TO_F1_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[20]                                    NET DELAY        0.000                  5.027  1       
 slow_clock/counter_i25/D                                     ENDPOINT         0.000                  5.027  1       
 
 
@@ -1933,6 +1827,112 @@ Name                                      Cell/Site Name     Delay Name       In
 slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
 slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
 {slow_clock/counter_i24/CK   slow_clock/counter_i25/CK}
+                                                             CLOCK PIN        0.000                  3.084  1       
+                                                             Uncertainty      0.000                  3.084  
+                                                             Hold time        0.000                  3.084  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+Required Time                                                                                       -3.084  
+Arrival Time                                                                                         5.027  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                                 1.943  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : slow_clock/counter_i26/Q  (SLICE_R3C30D)
+Path End         : slow_clock/counter_i26/D  (SLICE_R3C30D)
+Source Clock     : slow_clock/int_osc (R)
+Destination Clock: slow_clock/int_osc (R)
+Logic Level      : 2
+Delay Ratio      : 46.9% (route), 53.1% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.943 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
+slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
+{slow_clock/counter_i26/CK   slow_clock/counter_i27/CK}
+                                                             CLOCK PIN        0.000                  3.084  1       
+
+
+Data Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+slow_clock/counter_i26/CK->slow_clock/counter_i26/Q
+                                          SLICE_R3C30D       CLK_TO_Q0_DELAY  0.779                  3.863  1       
+slow_clock/counter[25]                                       NET DELAY        0.912                  4.775  1       
+slow_clock/add_4_add_5_23/B0->slow_clock/add_4_add_5_23/S0
+                                          SLICE_R3C30D       B0_TO_F0_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[21]                                    NET DELAY        0.000                  5.027  1       
+slow_clock/counter_i26/D                                     ENDPOINT         0.000                  5.027  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+                                                             CONSTRAINT       0.000                  0.000  1       
+slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
+slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
+{slow_clock/counter_i26/CK   slow_clock/counter_i27/CK}
+                                                             CLOCK PIN        0.000                  3.084  1       
+                                                             Uncertainty      0.000                  3.084  
+                                                             Hold time        0.000                  3.084  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+Required Time                                                                                       -3.084  
+Arrival Time                                                                                         5.027  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                                 1.943  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : slow_clock/counter_i27/Q  (SLICE_R3C30D)
+Path End         : slow_clock/counter_i27/D  (SLICE_R3C30D)
+Source Clock     : slow_clock/int_osc (R)
+Destination Clock: slow_clock/int_osc (R)
+Logic Level      : 2
+Delay Ratio      : 46.9% (route), 53.1% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.943 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
+slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
+{slow_clock/counter_i26/CK   slow_clock/counter_i27/CK}
+                                                             CLOCK PIN        0.000                  3.084  1       
+
+
+Data Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+slow_clock/counter_i27/CK->slow_clock/counter_i27/Q
+                                          SLICE_R3C30D       CLK_TO_Q1_DELAY  0.779                  3.863  1       
+slow_clock/counter[26]                                       NET DELAY        0.912                  4.775  1       
+slow_clock/add_4_add_5_23/B1->slow_clock/add_4_add_5_23/S1
+                                          SLICE_R3C30D       B1_TO_F1_DELAY   0.252                  5.027  1       
+slow_clock/clk_c_N_24[22]                                    NET DELAY        0.000                  5.027  1       
+slow_clock/counter_i27/D                                     ENDPOINT         0.000                  5.027  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
+                                                             CONSTRAINT       0.000                  0.000  1       
+slow_clock.hf_osc.osc_inst/CLKHF          HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  17      
+slow_clock/int_osc                                           NET DELAY        3.084                  3.084  17      
+{slow_clock/counter_i26/CK   slow_clock/counter_i27/CK}
                                                              CLOCK PIN        0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  

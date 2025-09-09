@@ -6,19 +6,12 @@ Report for cell top
                                   LUT4	         50        100.0
                                LUTGATE	         20        100.0
                                 LUTCCU	         30        100.0
-                                 IOBUF	         22        100.0
+                                 IOBUF	         23        100.0
                                 PFUREG	         28        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                          clock_divider	          1        60.0
                      seven_seg_display	          1        14.0
----------------------------------------------------
-Report for cell seven_seg_display
-   Instance path: top/seven_seg_counter
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          7        14.0
-                               LUTGATE	          7        35.0
 ---------------------------------------------------
 Report for cell clock_divider
    Instance path: top/slow_clock
@@ -27,3 +20,10 @@ Report for cell clock_divider
                                   LUT4	         30        60.0
                                 LUTCCU	         30        100.0
                                 PFUREG	         28        100.0
+---------------------------------------------------
+Report for cell seven_seg_display
+   Instance path: top/seven_seg_counter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        14.0
+                               LUTGATE	          7        35.0
