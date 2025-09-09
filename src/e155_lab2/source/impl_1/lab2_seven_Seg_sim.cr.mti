@@ -1,0 +1,15 @@
+C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module seven_seg_display
+
+Top level modules:
+	seven_seg_display
+
+} {} {}} C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/lab2_testbench_seven.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\kanparker\Downloads\e155-lab2\src\e155_lab2\source\impl_1\lab2_testbench_seven.sv}
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench_seven
+
+Top level modules:
+	testbench_seven
+
+} {} {}}

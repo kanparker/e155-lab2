@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
-        <Message>
-            <ID>35001476</ID>
-            <Severity>256</Severity>
-        </Message>
         <Message>
             <ID>35935050</ID>
             <Severity>16</Severity>
@@ -340,11 +329,6 @@
             <Navigation>4</Navigation>
         </Message>
         <Message>
-            <ID>35001200</ID>
-            <Severity>16</Severity>
-            <Dynamic>top</Dynamic>
-        </Message>
-        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -353,26 +337,26 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv(1): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv(8): </Dynamic>
             <Dynamic>top</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>8</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv(1): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv(8): </Dynamic>
             <Dynamic>seven_seg_display</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>8</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv(1): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv(9): </Dynamic>
             <Dynamic>clock_divider</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv</Navigation>
-            <Navigation>1</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>

@@ -1,8 +1,15 @@
+/*
+Title: seven_seg_display
+Author: Kanoa Parker
+Email: kanparker@g.hmc.edu
+Date: 9/9/2024
+Description: Takes in 4 switch inputs and outputs control signal for a seven segment display
+*/
 module seven_seg_display(
 	input 	logic	[3:0]s,
 	output 	logic [6:0]seg
 );
-
+	//logic used for old boolean algebra method
 	logic A,B,C,D;
 	
 	assign A = s[3];
@@ -10,6 +17,7 @@ module seven_seg_display(
 	assign C = s[1];
 	assign D = s[0];
 	
+	//old boolean algrebra method
 	/*
 	assign seg[6] = (~A&~C)&(B^D) | A&(~B&C&D | B&~C);
 	assign seg[5] = D&~(A^C) | B&(C&~D | A&~C&~D);
@@ -20,6 +28,7 @@ module seven_seg_display(
 	assign seg[0] = ~(A|B|C|D) | (~A&~B&~C&D) | (~A&B&C&D);
 	*/
 	
+	//case statement that map input to output
 	always_comb
 		case(s[3:0])
 			/// 0
@@ -56,6 +65,6 @@ module seven_seg_display(
 			4'b1111:seg[6:0] = 7'b0111000;
 		endcase
 			
-	
+	//see notes for segment conrispondice to led
 
 endmodule

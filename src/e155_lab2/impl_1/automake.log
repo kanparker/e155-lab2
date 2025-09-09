@@ -30,5 +30,5 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs 
 Peak Memory Usage: 103 MB
 
- 0.660961s wall, 0.500000s user + 0.125000s system = 0.625000s CPU (94.6%)
+ 0.648433s wall, 0.515625s user + 0.109375s system = 0.625000s CPU (96.4%)
 

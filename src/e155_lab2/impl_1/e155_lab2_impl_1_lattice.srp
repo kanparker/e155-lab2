@@ -5,14 +5,13 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep  8 18:33:32 2025
+Tue Sep  9 10:24:38 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/impl_1/e155_lab2_impl_1_lattice.synproj -logfile e155_lab2_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/promote.xml 
 
 INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
 
-The -top option is not used.
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -52,7 +51,7 @@ Resolving user-selected strategy settings...
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | 
+Top-level Module Name | top
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -113,7 +112,6 @@ Output HDL filename: e155_lab2_impl_1.vm
 -path C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/impl_1 (searchpath added)
 -path C:/lscc/radiant/2024.2/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
-CRITICAL <35001476> - synthesis: A top-level module has not been specified for the mixed language design.
 Verilog design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v
 Verilog design file: C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv
 Verilog design file: C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
@@ -175,13 +173,12 @@ Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-WARNING <35001200> - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
-INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv(1): compiling module top. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv(1): compiling module seven_seg_display. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/top.sv(8): compiling module top. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv(8): compiling module seven_seg_display. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanparker/downloads/e155-lab2/src/e155_lab2/source/impl_1/clock_divider.sv(9): compiling module clock_divider. VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
 [Parameter Setting Section Start]
 
@@ -235,10 +232,10 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 98 MB
+Peak Memory Usage: 93 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
-Total REAL Time: 9 secs 
+Total REAL Time: 8 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 7a387138c10b8cc324af486a45ef89cb394ff06
+Checksum -- synthesis -- netlist: 1daf3d8b7a3638f619b622337b782a60f303af52

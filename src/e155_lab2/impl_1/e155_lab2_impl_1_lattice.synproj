@@ -48,6 +48,7 @@
 
 
 -path "C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2"
+-top top
 -udb "e155_lab2_impl_1_rtl.udb"
 -output_hdl "e155_lab2_impl_1.vm"
 

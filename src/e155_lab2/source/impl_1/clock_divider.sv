@@ -1,3 +1,11 @@
+/*
+Title: clock_divider
+Author: Kanoa Parker
+Email: kanparker@g.hmc.edu
+Date: 9/9/2024
+Description: Takes in the standard oscillator adn divides the clock using a counter to produce a clock at desired frequency
+*/
+
 module clock_divider(
 	output clk
 );

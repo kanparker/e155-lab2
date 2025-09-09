@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2
+vseven_seg_display
+2C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
+Z0 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z1 !s110 1757438724
+!i10b 1
+!s100 `cGD2II]@QG9E@bL8Pg]V1
+I7=POmde@QT=D_^?kiooeO2
+S1
+Z2 dC:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1
+Z3 w1757438083
+8C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
+FC:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv
+!i122 3
+L0 8 63
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1757438724.000000
+!s107 C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e155-lab2/src/e155_lab2/source/impl_1/seven_seg_dsiplay.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vtestbench_seven
+2C:\Users\kanparker\Downloads\e155-lab2\src\e155_lab2\source\impl_1\lab2_testbench_seven.sv
+R0
+R1
+!i10b 1
+!s100 X2?E]fa4n>VKEaPoL[3kF1
+I^@YV>H3UCTGfbLl9f^9ho3
+S1
+R2
+R3
+8C:\Users\kanparker\Downloads\e155-lab2\src\e155_lab2\source\impl_1\lab2_testbench_seven.sv
+FC:\Users\kanparker\Downloads\e155-lab2\src\e155_lab2\source\impl_1\lab2_testbench_seven.sv
+!i122 2
+L0 11 56
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:\\Users\\kanparker\\Downloads\\e155-lab2\\src\\e155_lab2\\source\\impl_1\\lab2_testbench_seven.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:\Users\kanparker\Downloads\e155-lab2\src\e155_lab2\source\impl_1\lab2_testbench_seven.sv|
+!i113 0
+R7
+R8
